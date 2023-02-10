@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #330033;
+    --primary-color: #222122;
     --white-color: #ffffff;
     --lighter-gray-color: #eeeeee;
     --lighter-orange-color: #ff9900;
@@ -93,7 +93,7 @@ table caption {
 }
 
 .main-bg {
-    background-image: url('../img/endless-constellation.svg');
+    background-image: url('../img/background.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -178,6 +178,11 @@ table caption {
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     min-height: 100vh;
+    
+}
+
+.intro-content h2, .grid-content h2 {
+    color: rgb(255, 208, 0);
 }
 
 .intro-text-content, .intro-img {
@@ -191,7 +196,7 @@ table caption {
     height: auto;
 }
 
-.top3-content {
+.sobre-content {
     max-width: 64rem;
     display: flex;
     flex-direction: column;
@@ -255,6 +260,10 @@ table caption {
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.gallery-title {
+    color: var(--primary-color) !important;
 }
 
 .grid-title {
